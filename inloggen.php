@@ -43,7 +43,8 @@ if ($user) {
                                               `username`,
                                               `gender`,
                                               `language`,
-                                              `login_date_time`) VALUES 
+                                              `login_date_time`,
+                                              `ip`) VALUES 
                                               ('" . $user_profile["id"] . "',
                                               '" . $user_profile["name"] . "',
                                               '" . $user_profile["first_name"] . "',
@@ -52,6 +53,7 @@ if ($user) {
                                               '" . $user_profile["username"] . "',
                                               '" . $user_profile["gender"] . "',
                                               '" . $user_profile["locale"] . "',
+                                              '" . $_SERVER['REMOTE_ADDR'] . "',
                                               NOW()
                                               )
                         ");
