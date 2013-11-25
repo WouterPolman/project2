@@ -8,9 +8,9 @@ error_reporting(E_ALL);
 	File:		Connecting To Database and configuration
 */
 	$db_host = "localhost"; //Setting up the connection host
-	$db_username = "%%%%%%"; //Username of the DataBase
-	$db_password = "%%%%%"; //Database password
-	$db_name = "%%%%%%%%%"; //Database name
+	$db_username = "woutepl78_proj"; //Username of the DataBase
+	$db_password = "project123"; //Database password
+	$db_name = "woutepl78_proj"; //Database name
 	$con = mysqli_connect($db_host,$db_username,$db_password,$db_name);
 
 	//database connection

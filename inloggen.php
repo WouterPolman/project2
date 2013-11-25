@@ -43,7 +43,7 @@ if ($user) {
                                               `username`,
                                               `gender`,
                                               `language`,
-                                              `login_date_time`,
+                                              `login_date_time`
                                               `ip`) VALUES 
                                               ('" . $user_profile["id"] . "',
                                               '" . $user_profile["name"] . "',
