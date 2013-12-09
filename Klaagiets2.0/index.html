@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="css/form.css">
 		<link rel="stylesheet"  href="css/infinite_scroll.css">
 		<script src="js/jquery.js"></script>
+		<script src="js/Applink.js"></script>
 		<script src="js/jquery-migrate-1.1.1.js"></script>
 		<script src="js/superfish.js"></script>
 		<script src="js/forms.js"></script>
@@ -79,7 +80,17 @@
 		<![endif]-->
 
 	</head>
-	<body class="">
+	<body class="" onLoad="DetectTelefoon()">
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+	  			var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/nl_NL/all.js#xfbml=1";
+				fjs.parentNode.insertBefore(js, fjs);
+				}
+			(document, 'script', 'facebook-jssdk'));
+		</script>
 <!--==============================header=================================-->
 		<header class="page1">
 			<div class="container_12">
@@ -91,7 +102,7 @@
 								<li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">Home </a> <strong class="hover"></strong></li>
 								<li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">About</a><strong class="hover"></strong></li>
 								<li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="#">Services</a> <strong class="hover"></strong></li>
-								<li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">Clients</a> <strong class="hover"></strong></li>
+								<li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">Follow us</a> <strong class="hover"></strong></li>
 								<li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">Contacts</a> <strong class="hover"></strong></li>
 							</ul>
 						</nav>
@@ -103,6 +114,7 @@
 		</header>
 
 <!--=======content================================-->
+<div id="downloadapp">Download hier de Android App!( link komt nog).</div>
 		<div id="page1" class="content">
 			<div class="ic">More Website Templates @ TemplateMonster.com - September 9, 2013!</div>
 			<div class="container_12">
@@ -230,13 +242,25 @@
 		<div id="page4" class="content">
 			<div class="container_12">
 				<div class="grid_12">
-					<h3>Our Clients</h3>
+					<h3>Follow us</h3>
 				</div>
 				<div class="companies">
 					<div class="grid_3">
-						<img src="images/logo1.jpg" alt="">
-						<div class="text1">Company Name</div>Aliquam nibh ante, egestas id dictum  wrecommodo luctus liberoaesent.
+						<img src="images/Logo-klaagiets.png" alt="">
+						<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
 						<br>
+						<a href="https://twitter.com/search?q=klaagiets&src=typd" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @Klaagiets</a>
+							<script>!function(d,s,id){
+								var js,fjs=d.getElementsByTagName(s)[0];
+								if(!d.getElementById(id)){
+									js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";}
+									fjs.parentNode.insertBefore(js,fjs);
+								}
+							(document,"script","twitter-wjs");
+							</script>
+							<a name="tin1ie2" href="default.htm" title="twitterbutton.nl"><img src="http://www.twitterbutton.nl/buttons/006.png" alt="twitterbutton.nl" border="0"/></a><script type="text/javascript">t="TwitterUsername";x=document.getElementsByName('tin1ie2');y=new Array(104,116,116,112,58,47,47,116,119,105,116,116,101,114,46,99,111,109,47);z='';for(i in y){z+=String.fromCharCode(y[i]);}for(i in x){x[i].href=z+t;}</script>
+						
 						<a href="#">Go to Site</a>
 					</div>
 					<div class="grid_3">
